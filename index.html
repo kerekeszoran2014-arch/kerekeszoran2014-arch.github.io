@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My IPTV</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+<header>
+  <div class="brand"><span class="logo">▶</span><span>My IPTV</span></div>
+  <button id="fullscreenBtn" class="icon-btn" title="Fullscreen">⛶</button>
+</header>
+
+<main>
+  <section class="player-card">
+    <div class="player-wrap">
+      <video id="video" controls playsinline></video>
+      <div id="message" class="message">Select a channel to start watching</div>
+    </div>
+    <div class="now-playing">
+      <div>
+        <div class="eyebrow">NOW PLAYING</div>
+        <h1 id="channelName">No channel selected</h1>
+      </div>
+      <span id="status" class="status">● Offline</span>
+    </div>
+  </section>
+
+  <aside class="channels">
+    <div class="channels-head">
+      <h2>Channels</h2>
+      <span id="channelCount">1</span>
+    </div>
+    <button class="channel active" data-url="http://gradetv.net/api/s/RTL.hu:SD:12551.m3u8" data-name="RTL.hu SD">
+      <span class="channel-icon">TV</span>
+      <span><strong>RTL.hu SD</strong><small>Live stream</small></span>
+    </button>
+  </aside>
+</main>
+
+<footer>
+  <span>My IPTV</span>
+  <span>HLS player</span>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
