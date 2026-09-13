@@ -3,7 +3,7 @@
 	<title>Playlist</title>
 	<trackList>
 		<track>
-			<location>http://gradetv.net/api/s/RTL.hu:SD:12551.m3u8</location>
+			<location>https://m3m8.gradetv.net/api/s/RTL.hu%3ASD%3A12537.m3u8</location>
 			<duration>49860</duration>
 			<extension application="http://www.videolan.org/vlc/playlist/0">
 				<vlc:id>0</vlc:id>
